@@ -1,21 +1,19 @@
 import React from "react"
-import { Button } from '@material-ui/core';
+import App from "../components/App";
+import Loading_Page from "./Loading_Page";
 
-export default () => {
+
+
+const IndexPage = () => {
 
     return(
-    <div> 
-        <Button variant="contained">
-            Default
-        </Button>
-        <Button variant="contained" color="primary">
-            Primary
-        </Button>
-        <Button>
-            Hello world!         
-        </Button>
-    </div>
+        <div> 
+            <App/>        
+            <Loading_Page/>
+        </div>
     );
 }
+
+export default IndexPage;
 
 
