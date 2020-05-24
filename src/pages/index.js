@@ -1,16 +1,30 @@
 import React from "react"
-import App from "../components/App";
 import Loading_Page from "./Loading_Page";
+import Login_Page from "./Login_Page";
+import Layout from "../components/Layout";
+import { Link } from "gatsby"
+import { Divider } from "@material-ui/core";
+import App from "../components/App";
+
+
 
 
 
 const IndexPage = () => {
 
+    
+
     return(
-        <div> 
-            <App/>        
-            <Loading_Page/>
-        </div>
+        <>
+            
+            <App/> 
+            
+            {/* <Link to="/Loading_Page"> LoadingPage  </Link>   
+            <Divider/>
+
+            <Link to="/Login_Page"> LoadingPage </Link>  */}
+            
+        </>
     );
 }
 
