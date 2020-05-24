@@ -23,7 +23,7 @@ class App extends React.Component
         return (
         <>             
             <Login_Page appState={this.state}/>
-            <Loading_Page appState={this.state}/> 
+            {/* <Loading_Page appState={this.state}/>  */}
             
             {/* { 
                 (page == 0) && (isLoading == false) ? <Login_Page appState={this.state}/> : <Loading_Page appState={this.state}/>                                                  
