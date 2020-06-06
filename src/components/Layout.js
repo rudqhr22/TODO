@@ -19,7 +19,7 @@ class Layout extends React.Component
 
     return (    
         <Container maxWidth="sm" style={{textAlign:"center"}}>        
-            <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }}>
+            <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100%' }}>
 
             <Header/>            
             <Divider/>

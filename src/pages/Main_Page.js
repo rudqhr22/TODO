@@ -6,9 +6,7 @@ import AddIcon from '@material-ui/icons/Add';
 import TodoAddButton from "../components/TodoAddButton";
 import TodoCategory from "../components/TodoCategory";
 
-
-//import { Fab } from "@material-ui/core"
-
+let list = [];
 
 
 class Main_Page extends React.Component 
@@ -20,11 +18,6 @@ class Main_Page extends React.Component
         {
 
         }
-
-        // const [Array1, SetArray1] = useState([]);
-        // const [Array2, SetArray2] = useState([]);
-        // const [Array3, SetArray3] = useState([]);
-
     }
 
   render() {
@@ -45,14 +38,10 @@ class Main_Page extends React.Component
         </Grid>
       </Container> */}
 
-
-
-
       <TodoAddButton></TodoAddButton>
 
-      <TodoCategory title={"오늘"}/>
-      <TodoCategory title={"내일"}/>
-      <TodoCategory title={"나머지"}/>
+      <TodoCategory data={list}/>
+
     </Layout>
     )
   }
